@@ -1,7 +1,7 @@
 name : HDU-Library-Master
 on:
   schedule:
-    - cron: '56 14 * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 jobs:
   build:

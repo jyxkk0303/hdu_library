@@ -86,7 +86,7 @@ class Master:
             try:
                 exeTime=dt.strptime(env_executeTime,"%H:%M:%S")
                 if exeTime.hour==20 and exeTime.minute==0:
-                    pass
+                    self.job["executeTime"] = env_executeTime
                 elif exeTime.hour>=19 and exeTime.hour<20:
                     self.job["executeTime"] = env_executeTime
                 else:
